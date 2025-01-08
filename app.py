@@ -12,7 +12,7 @@ if st.button("搜尋"):
     if query.strip():
         with st.spinner("爬取中，請稍候..."):
             # 向 Render 的 API 發送請求
-            api_url = "https://your-render-url.onrender.com/scrape"  # 替換為你的 Render URL
+            api_url = "https://text-render-6mnc.onrender.com"  # 替換為你的 Render URL
             response = requests.post(api_url, json={"query": query})
 
             if response.status_code == 200:
